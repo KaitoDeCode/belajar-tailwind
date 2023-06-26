@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studying Tailwind Css</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<style>
+    #toggle:checked ~ label div.toggle-circle{
+        @apply translate-x-3;
+    }
+</style>
+
+<body class="font-Quicksand box-border dark:bg-slate-900 dark:text-white">
+    
+    <nav class="p-5 w-full bg-sky-700 flex justify-around">
+        <h1 class="text-white font-bold uppercase">Belajar Tailwind CSS</h1>
+        <div class="flex justify-center items-center">
+            <span class="font-bold text-white">Light</span>
+            <label for="toggle">
+                <div class="mx-2 w-16 h-6 border-white rounded-full bg-white p-1 flex items-center">
+                    <div class="bg-yellow-400 w-5 h-5 rounded-full toggle-circle">
+    
+                    </div>
+                </div>
+            </label>
+            <input type="checkbox" id="toggle" class="w-10 h-10 bg-black">
+            <span class="font-bold text-white">Dark</span>
+        </div>
+    </nav>
+    <header class="w-full h-96 flex items-center flex-col justify-center p-3 mb-20">
+        <h2 class="font-bold text-3xl uppercase text-sky-700">Welcome To My Website</h2>
+        <p class="dark:text-slate-400 text-center text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dolorem omnis nesciunt</p>
+    </header>
+    <main>
+        <div class="p-5 w-[80%] border-2 border-slate-200 mx-auto mb-20 cursor-pointer shadow-xl rounded-lg hover:bg-sky-700 group duration-300 ease-in-out">
+            <div class="mb-4">
+                <h2 class="font-bold text-sky-700 text-2xl group-hover:text-white">How to create Card</h2>
+                <hr class="w-0 h-[2px] bg-white group-hover:w-full duration-300 ease-linear">
+            </div>
+
+            <p class="dark:text-slate-400 text-sm text-slate-700 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem ipsum, consequatur magni fuga amet quasi ratione eum! Fugiat qui ipsam doloremque at, culpa quia nobis, tempora ipsum porro iste rerum laudantium praesentium explicabo cupiditate sed, molestias harum earum ullam!</p>
+          <button class="w-24 p-1 border-2 border-sky-700 rounded-full mt-3 group-hover:bg-yellow-400 group-hover:text-white group-hover:border-white hover:scale-105 active:scale-90">
+            Go
+          </button>
+        </div>
+        <div class=" selection:bg-yellow-300 selection:text-slate-800 p-5 w-[80%] border-2 border-slate-200 mx-auto mb-20 cursor-pointer shadow-xl rounded-lg hover:bg-sky-700 group duration-300 ease-in-out">
+            <div class="mb-4 w-auto">
+                <h2 class="font-bold text-sky-700 text-2xl group-hover:text-white">
+                    Selection Psudoe Class
+                </h2>
+                <hr class="w-0 h-[2px] bg-white group-hover:w-full duration-300 ease-linear">
+            </div>
+
+            <p class="dark:text-slate-400 text-sm text-slate-700 group-hover:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem ipsum, consequatur magni fuga amet quasi ratione eum! Fugiat qui ipsam doloremque at, culpa quia nobis, tempora ipsum porro iste rerum laudantium praesentium explicabo cupiditate sed, molestias harum earum ullam!</p>
+          <button class="w-24 p-1 border-2 border-sky-700 rounded-full mt-3 group-hover:bg-yellow-400 group-hover:text-white group-hover:border-white hover:scale-105 active:scale-90">
+            Go
+          </button>
+        </div>
+       
+        <div class=" selection:bg-yellow-300 selection:text-slate-800 p-5 w-[80%] border-2 border-slate-200 mx-auto mb-20 cursor-pointer shadow-xl rounded-lg hover:bg-sky-700 group duration-300 ease-in-out">
+            <div class="mb-4 w-auto">
+                <h2 class="font-bold text-sky-700 text-2xl group-hover:text-white">
+                    First Letter Styling
+                </h2>
+                <hr class="w-0 h-[2px] bg-white group-hover:w-full duration-300 ease-linear">
+            </div>
+
+            <p class="dark:text-slate-400 text-sm text-slate-700 group-hover:text-white first-letter:text-[80px] first-letter:font-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem ipsum, consequatur magni fuga amet quasi ratione eum! Fugiat qui ipsam doloremque at, culpa quia nobis, tempora ipsum porro iste rerum laudantium praesentium explicabo cupiditate sed, molestias harum earum ullam!</p>
+          <button class="w-24 p-1 border-2 border-sky-700 rounded-full mt-3 group-hover:bg-yellow-400 group-hover:text-white group-hover:border-white hover:scale-105 active:scale-90">
+            Go
+          </button>
+        </div>
+        <div class=" selection:bg-yellow-300 selection:text-slate-800 p-5 w-[80%] border-2 border-slate-200 mx-auto mb-20 cursor-pointer shadow-xl rounded-lg hover:bg-sky-700 group duration-300 ease-in-out">
+            <div class="mb-4 w-auto">
+                <h2 class="font-bold text-sky-700 text-2xl group-hover:text-white">
+                    First Line Styling
+                </h2>
+                <hr class="w-0 h-[2px] bg-white group-hover:w-full duration-300 ease-linear">
+            </div>
+
+            <p class="dark:text-slate-400 text-sm text-slate-700 group-hover:text-white first-letter:text-3xl first-letter:font-bold first-line:italic first-line:underline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem ipsum, consequatur magni fuga amet quasi ratione eum! Fugiat qui ipsam doloremque at, culpa quia nobis, tempora ipsum porro iste rerum laudantium praesentium explicabo cupiditate sed, molestias harum earum ullam!</p>
+          <button class="w-24 p-1 border-2 border-sky-700 rounded-full mt-3 group-hover:bg-yellow-400 group-hover:text-white group-hover:border-white hover:scale-105 active:scale-90">
+            Go
+          </button>
+        </div>
+
+        <div class="max-w-lg mx-auto shadow-lg shadow-slate-400 p-5 rounded-lg border-2 mb-32">
+            <div>
+                <h2 class="text-center capitalize text-2xl font-bold text-sky-700">form input styling</h2>
+            </div>
+            <form action="" method="post" class="flex flex-col justify-center items-center w-full">
+                <div class="max-w-[800px] flex flex-col mt-3">
+                    <label for="username">
+                        <span class=" dark:text-slate-200 font-bold text-slate-700 after:content-['*'] after:ml-1 after:text-pink-600">Username</span>
+                    </label>
+                    <input class="border-slate-400 border p-1 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-sky-700" type="text" name="username" id="username" placeholder="Masukan nama..." required>
+                </div>
+                <div class="max-w-[800px] flex flex-col mt-3">
+                    <label for="email">
+                        <span class="dark:text-slate-200 font-bold text-slate-700 after:content-['*'] after:ml-1 after:text-pink-600">Email</span>
+                    </label>
+                    <input class="border-slate-400 border p-1 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-sky-700 invalid:text-red-400 invalid:focus:ring-red-400 peer" type="email" name="email" id="email" placeholder="Masukan email..." >
+                    <p class="text-[12px] text-pink-700 px-2 invisible peer-invalid:visible">Email tidak valid!</p>
+                </div>
+                <div class="max-w-[800px] flex flex-col mt-3">
+                    <label for="password">
+                        <span class="dark:text-slate-200 font-bold text-slate-700 after:content-['*'] after:ml-1 after:text-pink-600">Password</span>
+                    </label>
+                    <input class="border-slate-400 border p-1 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-sky-700" type="password" name="password" id="password" placeholder="*********" required>
+                </div>
+            </form>
+        </div>
+
+        <div class="w-40 h-40 bg-green-700 mx-auto mb-20 rounded-lg group">
+            <div class="w-40 h-40 bg-yellow-500 mx-auto rounded-lg group-active:translate-x-10 group-hover:rotate-45 transition group-active:bg-red-700 transition-colors duration-700 ">
+            </div>
+        </div>
+
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-300 dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation Spin</h2>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-spin">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-300 dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation Ping</h2>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-ping">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-300 dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation pulse</h2>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-pulse">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-200  dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation bounce</h2>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-bounce">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-200  dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation Spin slow</h2>
+            <p class="text-center mb-20">Custom Animation</p>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-spin-low">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+        <div class="max-w-lg border-slate-400 rounded-lg shadow-md p-5 mx-auto dark:border-sky-200  dark:shadow-white mb-10">
+            <h2 class="text-center font-bold text-3xl mb-10">Animation Amburadul</h2>
+            <p class="text-center mb-20">Custom Animation</p>
+            <div class="w-40 h-40 mx-auto flex items-center justify-center mb-20 bg-sky-700 rounded-full animate-move">
+                <span class="font-bold text-2xl uppercase">Adi</span>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-5 mt-20">
+            <div class=" max-w-[600px] mx-auto group border-2 border-white p-5 rounded-lg shadow-md mb-20">
+                <h2 class="font-bold text-3xl text-center mb-5">Float</h2>
+                <hr class="w-0 h-[2px] bg-slate-200 group-hover:w-full duration-300">
+                <div>
+                    <img class="w-20 rounded-full float-left mx-3 my-3" src="./images/WhatsApp Image 2023-06-25 at 18.21.01.jpg" alt="">
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam voluptate reprehenderit sunt illo nostrum fugit similique in, veritatis rerum eligendi animi excepturi doloremque dolor iusto unde beatae. Quo, in illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat molestias, nobis nostrum labore voluptatum dolor cupiditate iusto sapiente facilis magnam numquam quidem fugit mollitia, quaerat excepturi, saepe officia autem perferendis.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
